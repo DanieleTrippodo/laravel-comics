@@ -15,12 +15,12 @@
 
 <body>
 
-    @include('layouts.main-header')
+    @include('partials.main-header')
 
     <main>
         @yield('content')   {{-- Da vedere --}}
     </main>
 
-    @include('layouts.main-footer')
+    @include('partials.main-footer')
 </body>
 </html>

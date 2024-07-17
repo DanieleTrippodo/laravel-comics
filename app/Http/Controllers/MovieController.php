@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class MainFooterController extends Controller
+class MovieController extends Controller
 {
     public function index()
     {
@@ -30,6 +30,6 @@ class MainFooterController extends Controller
         //! Verifica di debug per controllare se le variabili sono passate correttamente
         //! dd($infoItems, $footerSections);
 
-        return view('layouts.main-footer', compact('infoItems', 'footerSections'));
+        return view('pages.home', compact('infoItems', 'footerSections'));
     }
 }

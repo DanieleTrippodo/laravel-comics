@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\MainFooterController;
+use App\Http\Controllers\MovieController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +14,4 @@ use App\Http\Controllers\MainFooterController;
 |
 */
 
-Route::get('/', function () {
-    return view('layouts/app');
-});
-
-Route::get('/footer', [MainFooterController::class, 'index']);
+Route::get('/', [MovieController::class, 'index']);
