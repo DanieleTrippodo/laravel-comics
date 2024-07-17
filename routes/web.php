@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MainFooterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,10 +18,4 @@ Route::get('/', function () {
     return view('layouts/app');
 });
 
-
-
-
-
-use App\Http\Controllers\FooterController;
-
-Route::get('/footer', [FooterController::class, 'index']);
+Route::get('/footer', [MainFooterController::class, 'index']);

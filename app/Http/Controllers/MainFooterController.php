@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class FooterController extends Controller
+class MainFooterController extends Controller
 {
     public function index()
     {
         $infoItems = [
             ['icon' => 'path/to/icon1.png', 'alt' => 'Icon 1', 'text' => 'Info 1'],
             ['icon' => 'path/to/icon2.png', 'alt' => 'Icon 2', 'text' => 'Info 2'],
-            // Aggiungi altri elementi se necessario
+            // solo un test con alcuni elementi
         ];
 
         $footerSections = [
@@ -23,9 +23,13 @@ class FooterController extends Controller
                 'title' => 'Section 2',
                 'items' => ['Item A', 'Item B', 'Item C']
             ],
-            // Aggiungi altre sezioni se necessario
+            // test con alcune sezioni del footer
         ];
 
-        return view('main-footer', compact('infoItems', 'footerSections'));
+
+        //! Verifica di debug per controllare se le variabili sono passate correttamente
+        //! dd($infoItems, $footerSections);
+
+        return view('layouts.main-footer', compact('infoItems', 'footerSections'));
     }
 }

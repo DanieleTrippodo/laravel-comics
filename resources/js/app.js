@@ -16,7 +16,7 @@ import.meta.glob([
 *   How to use Image import:
 *
 *   <img src="{{ vite::asset('resources/img/NAMEIMG.jpg') }}" alt="NAME">
-*
+*      potrebbe non funzionare, in quel caso basta rimuovere "vite::"
 */
 // ? ----------Importazioni Immagini----------------
 
