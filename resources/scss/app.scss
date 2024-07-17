@@ -58,3 +58,40 @@ footer {
     }
 }
 //-f Footer Section ----------------------------------------------
+
+
+
+// Sezione Comic-List ----------------------
+
+// Stili personalizzati per il layout ComicFlex
+#ComicFlex {
+    .card {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 15px;
+
+            .card-title {
+                font-size: 1.25rem;
+                margin-bottom: 0.75rem;
+            }
+
+            .card-text {
+                margin-bottom: 0.5rem;
+            }
+
+            .text-muted {
+                font-size: 0.875rem;
+            }
+        }
+    }
+}
+
+// Sezione Comic-List ----------------------
