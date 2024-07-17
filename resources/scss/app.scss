@@ -7,7 +7,37 @@
 
 
 
-//? Regole CSS e SCSS
+//? Regole CSS e SCSS ------GENERALI-----------------
 body{
     background-color: rgb(100, 52, 52);
 }
+
+
+
+
+
+//! Header Section ----------------------------------------------
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+
+  .logo img {
+    height: 60%;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+
+    li a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+}
+//! Header Section ----------------------------------------------
